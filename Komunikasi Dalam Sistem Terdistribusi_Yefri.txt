@@ -1,1 +1,31 @@
+**Pendahuluan**
+- **Definisi Sistem Terdistribusi**: Sistem terdistribusi adalah sebuah rangkaian komputer yang saling berhubungan dan bekerja sama untuk menyelesaikan tugas secara bersamaan, terdistribusi di lokasi-lokasi yang berbeda.
 
+**Konsep Dasar Komunikasi dalam Sistem Terdistribusi**
+- **Apa itu Komunikasi?**: Komunikasi dalam sistem terdistribusi merujuk pada pertukaran informasi antara komponen yang berbeda dalam sistem tersebut.
+- **Tujuan Komunikasi**: Memungkinkan komponen untuk berbagi data, mengkoordinasikan tugas, dan berinteraksi untuk mencapai tujuan bersama.
+- **Karakteristik Komunikasi**: Komunikasi dalam sistem terdistribusi harus cepat, andal, dan efisien.
+
+**Metode Komunikasi dalam Sistem Terdistribusi**
+- **Message Passing**: Komponen dalam sistem terdistribusi mengirimkan pesan satu sama lain untuk berkomunikasi. Pesan dapat berisi perintah, data, atau permintaan informasi.
+- **Remote Procedure Call (RPC)**: Mengizinkan pemanggilan fungsi atau prosedur di mesin yang berbeda seolah-olah mereka berada di mesin yang sama.
+- **Publish-Subscribe**: Sistem terdistribusi menggunakan model ini untuk berlangganan (subscribe) ke peristiwa tertentu dan menerima notifikasi saat peristiwa tersebut terjadi.
+- **Shared Memory**: Komponen dalam sistem terdistribusi berbagi area memori yang sama untuk berkomunikasi. Ini memerlukan sinkronisasi yang ketat.
+
+**Protokol Komunikasi**
+- **TCP/IP**: Protokol ini digunakan untuk komunikasi di internet dan menyediakan koneksi yang andal.
+- **HTTP/HTTPS**: Digunakan untuk komunikasi web, termasuk permintaan dan respons antara browser dan server web.
+- **Message Queues**: Protokol seperti RabbitMQ dan Apache Kafka digunakan untuk mentransfer pesan antar komponen.
+
+**Contoh Kasus: Komunikasi dalam Arsitektur Mikroservis**
+- **Gambar Contoh**: https://terralogiq.com/wp-content/uploads/2023/07/microservices-architecture.jpg
+- **Penjelasan Gambar**: Pada gambar contoh, kita dapat melihat arsitektur mikroservis yang terdiri dari beberapa layanan yang berkomunikasi satu sama lain melalui protokol HTTP/HTTPS. Setiap mikroservis memiliki tugas dan tanggung jawab yang berbeda, dan komunikasi terjadi saat satu mikroservis meminta atau mengirim data ke yang lain.
+
+**Tantangan dalam Komunikasi Dalam Sistem Terdistribusi**
+- **Kesalahan Jaringan**: Koneksi jaringan yang tidak stabil atau terputus dapat menyebabkan kegagalan komunikasi.
+- **Sinkronisasi**: Memastikan bahwa pesan atau data dikirim dan diterima dengan benar dan pada waktu yang tepat.
+- **Skalabilitas**: Sistem harus mampu menangani peningkatan volume komunikasi saat sistem berkembang.
+
+**Kesimpulan**
+- Komunikasi dalam sistem terdistribusi adalah elemen kunci dalam memungkinkan komponen-komponen dalam sistem bekerja bersama-sama.
+- Memahami metode komunikasi dan protokol yang tepat adalah penting dalam merancang sistem terdistribusi yang efisien dan andal.
