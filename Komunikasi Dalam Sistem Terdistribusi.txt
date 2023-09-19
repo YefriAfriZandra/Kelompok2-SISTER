@@ -1,0 +1,59 @@
+komunikasi dalam sistem terdistribusi
+==> proses penting dimana berbagai komponen atau node dalam sistem terdistribusi berinteraksi, bertukar data dan berkoodinasi untuk mencapai tujuan yang diinginkan.
+ 
+sistem terdistribusi adalah kumpulan komputer atau perangkat terhubung dalam jaringan dan bekerja bersama untuk menyelesaikan tugas atau layanan tertentu. komunikasi ini memungkinkan komponen sistem terdistribusi untuk saling berbagi informasi, pengiriman pesan, dan melakukan tindakan koordinasi yang sangat penting untuk menjaga konsistensi dan keandalan sistem.
+
+karakteristik dari komunikasi dalam sistem terdistribusi :
+* asinkron : yang berarti pesan atau permintaan dapat dikirim dan diterima tanpa harus menunggu respon langsung. 
+* distribusi : komunikasi ini terjadi antara komponen yang tersebar di berbagai lokasi fisik atau node dalam jaringan. bisa dalam satu ruangan atau di seluruh dunia tergantung pada arsitektur sistem.
+* keandalan : berarti pesan atau data harus disampaikan dengan aman ke tujuan yang benar, jika ada kegagalan, sistem harus memiliki mekanisme pemulihan.
+* efisiensi : penting untuk memastikan bahwa komunikasi dalam sistem terdistribusi adalah efisien dalam hal penggunaan sumber daya termasuk bandwidth jaringan dan daya komputasi
+* keamanan : adalah pertimbangan utama dalam komunikasi sistem terdistribusi. data yang dikirim harus dilindungi dari akses yang tidak sah atau perubahan selama transmisi.
+* skalabilitas : Sistem terdistribusi harus dapat berkembang secara horizontal dengan menambahkan lebih banyak node atau komponen, dan komunikasi harus dapat mengakomodasi pertumbuhan ini tanpa mengorbankan kinerja atau keandalan.
+* protokol dan format pesan : Komunikasi dalam sistem terdistribusi sering diatur oleh protokol komunikasi yang mendefinisikan cara pesan harus dibentuk, dikirim, dan diproses.
+* manajemen kesalahan : Sistem terdistribusi harus memiliki mekanisme untuk mendeteksi, mengatasi, dan memberi tahu pengguna tentang kesalahan yang terjadi dalam komunikasi, seperti kehilangan pesan atau kegagalan node.
+
+contoh komunikasi dalam sistem terdistribusi : pertukaran pesan antara server dan klien dalam arsitektur web, komunikasi antara node dalam jaringan sensor nirkabel, atau pertukaran data antara komponen mikro layanan dalam aplikasi berbasis layanan (microservices). 
+
+tool :
+* Protokol Jaringan: Protokol jaringan adalah dasar komunikasi dalam sistem terdistribusi. Beberapa contoh protokol jaringan termasuk:
+- TCP/IP: Digunakan untuk komunikasi di seluruh internet dan jaringan lokal.
+- HTTP/HTTPS: Protokol ini digunakan untuk komunikasi web.
+- FTP (File Transfer Protocol): Untuk mentransfer file antara komputer.
+- SMTP (Simple Mail Transfer Protocol): Untuk pengiriman email.
+- DNS (Domain Name System): Untuk mencari alamat IP dari nama domain.
+
+* Message Queues: Message queues adalah alat yang digunakan untuk mengirim pesan antara komponen dalam sistem terdistribusi secara asinkron. Contoh alatnya adalah:
+- RabbitMQ: Message broker yang populer.
+- Apache Kafka: Untuk mengelola aliran data secara real-time.
+- Amazon SQS: Layanan antrian pesan dari Amazon Web Services (AWS).
+
+* RESTful API: REST (Representational State Transfer) adalah gaya arsitektur yang umum digunakan dalam pengembangan aplikasi web. Alat untuk mengembangkan RESTful API termasuk:
+- Express.js: Framework Node.js yang memungkinkan Anda membuat API RESTful.
+- Spring Boot: Framework Java untuk membuat layanan web RESTful.
+
+* gRPC: gRPC adalah kerangka kerja Remote Procedure Call (RPC) yang dikembangkan oleh Google. Ini memungkinkan komunikasi antara komponen dalam sistem terdistribusi dengan definisi antarmuka yang didefinisikan menggunakan Protobuf.
+
+* WebSocket: WebSocket adalah protokol komunikasi dua arah yang digunakan untuk komunikasi real-time dalam aplikasi web. Contoh alatnya adalah:
+- Socket.io: Pustaka JavaScript untuk komunikasi real-time.
+- Spring WebSockets: Untuk komunikasi WebSocket dalam aplikasi Java.
+
+* Middleware Messaging: Middleware messaging adalah perangkat lunak yang menyediakan lapisan abstraksi untuk mengelola komunikasi antara komponen dalam sistem terdistribusi. Contoh alatnya adalah:
+- Apache ActiveMQ: Message broker yang mendukung berbagai protokol.
+- RabbitMQ: Message broker yang mendukung AMQP (Advanced Message Queuing Protocol).
+
+* RPC Frameworks: RPC memungkinkan pemanggilan fungsi atau metode di server jarak jauh seolah-olah mereka dipanggil di komputer lokal. Beberapa alatnya adalah:
+- gRPC: Digunakan untuk menghasilkan kode server dan klien dalam berbagai bahasa pemrograman.
+-Apache Thrift: Framework untuk menghasilkan kode RPC yang efisien.
+
+*Enterprise Service Bus (ESB): ESB adalah perangkat lunak yang digunakan untuk menghubungkan, mengintegrasikan, dan mengelola komunikasi antara berbagai aplikasi dalam sistem terdistribusi.
+- Mule ESB: Salah satu contoh ESB yang populer.
+
+* Middleware IoT: Untuk komunikasi dalam Internet of Things (IoT), beberapa alat yang digunakan meliputi:
+- MQTT (Message Queuing Telemetry Transport): Protokol ringan untuk komunikasi IoT.
+- Apache Kafka: Digunakan untuk mengelola aliran data dari perangkat IoT.
+
+* P2P (Peer-to-Peer) Protocols: Protokol P2P memungkinkan komunikasi langsung antara dua atau lebih perangkat dalam jaringan terdistribusi tanpa server pusat. Contoh aplikasi P2P termasuk BitTorrent dan Skype.
+
+* Alat Keamanan: Keamanan sangat penting dalam komunikasi dalam sistem terdistribusi, dan alat keamanan seperti firewall, enkripsi, dan alat manajemen kunci digunakan untuk melindungi data dan komunikasi.
+
